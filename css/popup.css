@@ -1,0 +1,41 @@
+#popup {
+  padding-top: 2rem;
+  background-color: wheat;
+  position: relative;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  border-radius: 1rem;
+  animation: khatra 3s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes khatra {
+  from {
+    width: 390px;
+  }
+
+  to {
+    height: 300px;
+  }
+}
+
+#popup #pop-close {
+  position: absolute;
+  right: 14px;
+  top: 9px;
+  cursor: pointer;
+}
+
+#popup #pop-close .logo-sale {
+  width: 100px;
+}
+
+img {
+  width: 384px;
+  mix-blend-mode: darken;
+}

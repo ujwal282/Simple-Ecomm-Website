@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+
+  <body>
+    <section id="heading">
+      <div class="logo">
+        <a href="#"><img src="../pictures/logostore.jpg" alt="" /></a>
+        <div id="opening" onclick="myOpening()">
+          <span class="material-symbols-outlined ham"> menu </span>
+        </div>
+      </div>
+
+      <div>
+        <ul id="nav">
+          <li><a class="" href="index.html">Home</a></li>
+          <li><a class="" href="about.html">About</a></li>
+          <li><a  href="service.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a  class="ac" href="contact.html">Contact</a></li>
+          <!-- <li><a href="">Category</a></li> -->
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <div id="sidebar">
+            <div class="close-ham" onclick="myClosing()">
+              <span class="material-symbols-outlined close-close"> close </span>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <main>
+      <form action="" class="form">
+        <div class="contact-form">
+          <h2>Get In Touch</h2>
+          <h3 id="message"></h3>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="First Name"
+            onblur="checkStatus()"
+            required
+          />
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Last Name"
+            onblur="checkStatus()"
+          />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Phone" required />
+          <input type="text" id="address" placeholder="Address" required />
+          <textarea placeholder="Type your message here"></textarea>
+          <button type="submit" onclick="sendMessage()" id="submit">
+            Submit
+          </button>
+          <div class="thanks-message">Thanks for submitting!</div>
+        </div>
+      </form>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094273!2d144.9537353153169!3d-37.816279779751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1fba073e37!2sVictoria%20State%20Library!5e0!3m2!1sen!2sau!4v1609275162911!5m2!1sen!2sau"
+          width="600"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href=""><i class="fa-brands fa-facebook" id="facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github" id="github"></i></a>
+        <a href=""><i class="fa-brands fa-apple" id="apple"></i></a>
+      </div>
+      <p>
+        <span>&copy;Cazy Store</span><br />
+        <a href="mailto:ujwalpaudel12345@gmail.com">Email Us</a>
+      </p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/service.css" />
+  </head>
+
+  <body>
+    <section id="heading">
+      <div class="logo">
+        <a href="#"><img src="../pictures/logostore.jpg" alt="" /></a>
+        <div id="opening" onclick="myOpening()">
+          <span class="material-symbols-outlined ham"> menu </span>
+        </div>
+      </div>
+
+      <div>
+        <ul id="nav">
+          <li><a class="" href="index.html">Home</a></li>
+          <li><a class="" href="about.html">About</a></li>
+          <li><a class="ac" href="service.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="">Category</a></li> -->
+          <li>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <div id="sidebar">
+            <div class="close-ham" onclick="myClosing()">
+              <span class="material-symbols-outlined close-close"> close </span>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section id="main">
+      <h4>Buy Now,Conquer Laundry Later</h4>
+      <h2>Shop Smart,Look Sharp,Never Cook</h2>
+      <h1>Dress Up and Dream Big</h1>
+      <marquee behavior="alternate" direction="left-right">
+        <p>Everything you need, on a budget</p>
+      </marquee>
+    </section>
+
+    <section id="more" class="section-p1">
+      <div class="mo-box">
+        <img src="../pictures/time.gif" alt="" />
+        <h6>Fast Delivery</h6>
+      </div>
+      <div class="mo-box">
+        <img src="../pictures/discount.gif" alt="" />
+        <h6>Great Disount</h6>
+      </div>
+      <div class="mo-box">
+        <img src="../pictures/new.gif" alt="" />
+        <h6>Newly Launched</h6>
+      </div>
+      <div class="mo-box">
+        <img src="../pictures/cash.gif" alt="" />
+        <h6>Cash On Delivery</h6>
+      </div>
+      <div class="mo-box">
+        <img src="../pictures/care.gif" alt="" />
+        <h6>customer Care</h6>
+      </div>
+      <div class="mo-box">
+        <img src="../pictures/home.gif" alt="" />
+        <h6>Home Delivery</h6>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <a href=""><i class="fa-brands fa-facebook" id="facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter" id="twitter"></i></a>
+        <a href=""><i class="fa-brands fa-github" id="github"></i></a>
+        <a href=""><i class="fa-brands fa-apple" id="apple"></i></a>
+      </div>
+
+      <p>
+        <span>&copy;Cazy Store</span><br />
+        <a href="#" target="_self" onclick="termsCondition()">click</a>
+      </p>
+
+      <div id="popup">
+        <div id="pop-close" onclick="popupClose()">
+          <span class="material-symbols-outlined"> close </span>
+        </div>
+        <div class="logo-sale">
+          <h1>Terms and Conditions</h1>
+          <p>
+            Welcome to Our Crazy Store! By accessing or using our website, you
+            agree to be bound by these terms and conditions. Please read them
+            carefully.
+          </p>
+
+          <h2>1. General</h2>
+          <p>
+            <strong>Acceptance of Terms:</strong> By using our services, you
+            agree to comply with and be bound by these terms. If you do not
+            agree, please do not use our website.
+          </p>
+          <p>
+            <strong>Modification of Terms:</strong> We reserve the right to
+            change these terms at any time. Any changes will be posted on this
+            page, and your continued use of the site signifies your acceptance
+            of the updated terms.
+          </p>
+
+          <h2>2. Products and Services</h2>
+          <p>
+            <strong>Product Descriptions:</strong> We strive to ensure that our
+            products are described as accurately as possible. However, we do not
+            warrant that product descriptions or other content is accurate,
+            complete, or error-free.
+          </p>
+          <p>
+            <strong>Pricing:</strong> All prices are subject to change without
+            notice. Prices may include applicable taxes, but additional charges
+            for shipping and handling may apply.
+          </p>
+
+          <h2>3. Orders</h2>
+          <p>
+            <strong>Order Acceptance:</strong> We reserve the right to refuse or
+            cancel any order at our discretion. If we cancel an order, we will
+            notify you and refund any payment received.
+          </p>
+          <p>
+            <strong>Payment:</strong> Payment must be made at the time of
+            purchase. We accept [list payment methods].
+          </p>
+
+          <h2>4. Shipping and Delivery</h2>
+          <p>
+            <strong>Shipping Policy:</strong> We aim to process and ship orders
+            within [number] business days. Delivery times may vary depending on
+            your location.
+          </p>
+          <p>
+            <strong>Shipping Charges:</strong> Shipping charges are calculated
+            at checkout based on the shipping method chosen and the delivery
+            destination.
+          </p>
+
+          <h2>5. Returns and Refunds</h2>
+          <p>
+            <strong>Return Policy:</strong> You may return items within [number]
+            days of receipt for a refund or exchange, provided they are in
+            original condition and packaging. Certain items may be
+            non-returnable; these will be clearly marked.
+          </p>
+          <p>
+            <strong>Refunds:</strong> Refunds will be processed within [number]
+            days of receiving the returned items. Original shipping costs are
+            non-refundable.
+          </p>
+
+          <h2>6. Privacy and Security</h2>
+          <p>
+            <strong>Privacy Policy:</strong> Your privacy is important to us.
+            Please refer to our [Privacy Policy] for information on how we
+            collect, use, and protect your personal information.
+          </p>
+          <p>
+            <strong>Security:</strong> We implement a variety of security
+            measures to maintain the safety of your personal information.
+          </p>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>
+            <strong>Disclaimer:</strong> We do not guarantee that our website
+            will be error-free, uninterrupted, or that it will provide specific
+            results from use of the site or any content, search, or link on it.
+          </p>
+          <p>
+            <strong>Limitation of Liability:</strong> To the fullest extent
+            permitted by law, [Your E-commerce Store] shall not be liable for
+            any damages arising out of or related to your use of the website or
+            the purchase of products.
+          </p>
+
+          <h2>8. Governing Law</h2>
+          <p>
+            These terms and conditions are governed by and construed in
+            accordance with the laws of [Your Jurisdiction], and you irrevocably
+            submit to the exclusive jurisdiction of the courts in that state or
+            location.
+          </p>
+
+          <h2>9. Contact Information</h2>
+          <p>
+            If you have any questions about these terms, please contact us at
+            [Your Contact Information].
+          </p>
+
+          <p>
+            By using our site, you acknowledge that you have read, understood,
+            and agree to be bound by these terms and conditions.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/terms.js"></script>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
